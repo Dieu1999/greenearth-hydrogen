@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap');
+
+:root {
+  --main-color: #141a0f;
+  --second-color: #fff;
+  --green-color: #5c9735;
+}
+
+body {
+  margin: 0;
+  background: var(--second-color);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.6em;
+}
+
+.bg-page {
+  background: #f4f6f3;
+  padding: 60px 0;
+}
+
+.type-page {
+  max-width: 1200px;
+  background: var(--second-color);
+  padding: 80px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Unna',serif;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 1.1em;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.dark-header {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dark-header a {
+  color: var(--second-color);
+}
+
+.dark-header svg {
+  fill: var(--second-color);
+}
+
+header svg {
+  width: 18px;
+  height: 18px;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-section::after {
+  content: '';
+  background-color: var(--main-color);
+  opacity: .5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  right: 20%;
+  text-align: center;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--second-color);
+}
+
+.subheading {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.heading {
+  margin-bottom: 40px;
+}
+
+.btn-secondary, .btn-primary {
+  font-size: 16px;
+  padding: 15px 30px;
+  transition: 0.3s all;
+  line-height: 15px;
+}
+
+.btn-primary {
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+
+.btn-secondary {
+  background-color: var(--green-color);
+  color: var(--second-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+
+a.btn {
+  display: inline-block;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.product-card {
+  padding-bottom: 2.5em;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  padding-top: 104px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.footer {
+  background-color: var(--main-color);
+  color: var(--second-color);
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.copy-right {
+  padding-top: 20px;
+}
+
+.white-header {
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.white-header img {
+  filter: invert(1);
+  max-width: 135px;
+}
+
+.dark-header img {
+  max-width: 150px
+}
+
+.text-notice {
+  padding: 2px 15px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+
+.on-new {
+  background: var(--green-color);
+}
+
+.on-sale {
+  background: var(--main-color);
+}
+
+.drawer-wrap {
+  width: 500px;
+}
+
+.cart-drawer-header {
+  border-bottom: 1px solid #dddddd;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.cart-drawer-header h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cart-remove {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cart-remove button svg {
+  border: 1px solid #4d4f48;
+  margin: 0;
+  color: #4d4f48;
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.cart-line-item {
+  position: relative;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 1.5rem;
+}
+
+.line-item-price > div {
+  margin-left: 3px;
+}
+
+.cart-item-image {
+  width: 70px;
+}
+
+.cart-totals {
+  border: 1px solid #dddddd;
+  padding: 20px;
+  width: 48%;
+  margin: 40px 0 0 auto;
+}
+
+.page-title {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  width: 200px;
+  margin-right: 20px;
+}
+.sidebar input {
+  display: none;
+}
+.sidebar input:checked + label {
+  color: green;
+  border-bottom: 1px solid var(--green-color);
+}
+
+.sidebar label {
+  transition: 0.3s all;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
